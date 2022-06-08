@@ -1,0 +1,15 @@
+
+
+.bodyCardContacto {
+    @extend .card-bodyIndex;
+  }
+.contactoCartas{
+  @extend .cartaIndex;
+}
+
+
+  .contactoTexto {
+    font-family: map-get($textoParrafo, family);
+    font-size: 0.95rem;
+  }
+  

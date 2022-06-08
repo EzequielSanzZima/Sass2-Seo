@@ -1,0 +1,48 @@
+
+
+
+
+.animacionInformacionIndex{
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+    @keyframes parrafoEntraIzq {
+        from { transform: translate(1000px,  0); }
+        to   { transform: translate(-0px, 0); } 
+    }  
+        
+        .imagenInformacion{
+            padding: 2px;
+                @include tablet{
+                    height: 28vh;
+                }
+            .divTextoIntroduccion{
+                padding-left: 20px;
+
+                
+
+                    .textoIntroduccion{ /*Titulo Bienvenida*/
+                        color: #734885;
+                    }
+                
+            }
+        }
+}
+
+.informacionIndex{
+    font-family: map-get($textoParrafo, family);
+    font-size: 14.1px;
+}
+
+
+.card-bodyIndex{
+    background-color: #A569BD;
+    color: white;
+     .cartaIndex{
+        font-size: map-get($textoParrafo, size);
+        font-family: map-get($textoParrafo, family);
+        padding: 0px 20px;
+        padding-bottom: 20px;
+     }
+        
+}
+
