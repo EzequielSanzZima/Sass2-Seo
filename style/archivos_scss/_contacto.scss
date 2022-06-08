@@ -2,14 +2,39 @@
 
 .bodyCardContacto {
     @extend .card-bodyIndex;
-  }
+}
 .contactoCartas{
-  @extend .cartaIndex;
+    font-size: map-get($textoParrafo, size);
+    font-family: map-get($textoParrafo, family);
+    margin: 0px;
+  
+}
+.row{
+  justify-content: center;
+}
+.cartasContacto{
+  @include tablet{
+    width: 60vh;
+  }
+}
+.card-img-top{
+  @include tablet{
+    height: 150px;
+  }
 }
 
 
-  .contactoTexto {
-    font-family: map-get($textoParrafo, family);
-    font-size: 0.95rem;
-  }
+.contactoTexto {
+  font-family: map-get($textoParrafo, family);
+  font-size: 0.95rem;
+}
+
+.form-label{
+  margin-bottom: 0px;
+}
+
+.form-control:focus{
+  border-color: rgb(192, 76, 167);
+  box-shadow: 0 0 0 0.10rem rgb(143, 102, 135);
+}
   
