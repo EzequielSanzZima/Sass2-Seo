@@ -29,6 +29,15 @@
   font-size: 0.95rem;
 }
 
+.contactoTelefonoEmail{
+  padding: 0px 5px 0px 0px;
+  @include tablet{
+    flex-direction: column!important;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
 .form-label{
   margin-bottom: 0px;
 }

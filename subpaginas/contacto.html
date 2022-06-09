@@ -112,18 +112,28 @@
           <p class="text-center contactoTexto ">Rellene los casilleros con sus datos y pregunta, le contestaremos lo mas rápido.</p>
           
           <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="md-form mb-0">
                 <label for="nombre" class="pt-1">Nombre y apellido:</label>
                 <input type="text" name="nombre" class="form-control" placeholder="Campo Obligatorio" required>
               </div>
-              <div class="">
-                <div class="md-form mb-0">
-                  <label for="nombre" class="pt-1">Teléfono </label>
-                  <input type="number" name="numero" class="form-control" placeholder="Campo Obligatorio">
+
+              <div class="d-flex contactoTelefonoEmail">
+                <div class="col-md-6">
+                  <div class="md-form mb-0 contactoFormularioTelefono">
+                    <label for="nombre" class="pt-1">Teléfono: </label>
+                    <input type="number" name="numero" class="form-control" placeholder="Elija uno, nos contactaremos por aca">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="nombre" class="pt-1">Email: </label>
+                    <input type="number" name="numero" class="form-control" placeholder="Elija uno, nos contactaremos por aca">
+                  </div>
                 </div>
               </div>
-              <div class="mb-3">
+
+              <div class="col-md-12 mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label pt-1">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Campo Obligatorio"></textarea>
               </div>
