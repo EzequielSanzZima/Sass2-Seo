@@ -20,8 +20,8 @@
 }
 
 .letraServicioAcordeon{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
+    font-size: map-get($textoParrafo, size);
+    font-family: map-get($textoParrafo, family);
 }
 
 

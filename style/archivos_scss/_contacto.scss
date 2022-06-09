@@ -1,14 +1,48 @@
 
 
+.divCartasContacto{
+  @extend .animacionInformacionIndex;
+  animation-duration: 0.2s;
+}
+
 .bodyCardContacto {
     @extend .card-bodyIndex;
+    text-align: center;
+    font-family: map-get($textoParrafo, family);
 }
+    
+
+
 .contactoCartas{
     font-size: map-get($textoParrafo, size);
     font-family: map-get($textoParrafo, family);
     margin: 0px;
   
 }
+
+.bodyCardContacto a p{
+  margin: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+    &:hover, &:focus {
+    color: #23527c;
+    text-decoration: underline;
+    }
+      &:focus{
+        outline: 5px auto;
+        outline-offset: -2px;
+      }
+}
+
+
+.fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before{ 
+  color: #4A235A;
+  padding-right: 5px;
+}
+
+
 .row{
   justify-content: center;
 }
@@ -27,6 +61,7 @@
 .contactoTexto {
   font-family: map-get($textoParrafo, family);
   font-size: 0.95rem;
+  margin: 0px;
 }
 
 .contactoTelefonoEmail{

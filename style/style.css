@@ -75,7 +75,7 @@
   color: white;
 }
 
-.animacionInformacionIndex {
+.animacionInformacionIndex, .divCartasContacto {
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   -webkit-animation-name: parrafoEntraIzq;
@@ -105,25 +105,25 @@
 }
 
 @media screen and (max-width: 768px) {
-  .animacionInformacionIndex .informacionIndex {
+  .animacionInformacionIndex .informacionIndex, .divCartasContacto .informacionIndex {
     padding: 0px 0px 28px !important;
   }
 }
 
-.animacionInformacionIndex .imagenInformacion {
+.animacionInformacionIndex .imagenInformacion, .divCartasContacto .imagenInformacion {
   padding: 2px;
 }
 
-.animacionInformacionIndex .imagenInformacion .divTextoIntroduccion {
+.animacionInformacionIndex .imagenInformacion .divTextoIntroduccion, .divCartasContacto .imagenInformacion .divTextoIntroduccion {
   padding-left: 20px;
 }
 
-.animacionInformacionIndex .divTextoIntroduccion p {
+.animacionInformacionIndex .divTextoIntroduccion p, .divCartasContacto .divTextoIntroduccion p {
   margin-bottom: 11px;
 }
 
 @media screen and (max-width: 768px) {
-  .animacionInformacionIndex .divTextoIntroduccion p {
+  .animacionInformacionIndex .divTextoIntroduccion p, .divCartasContacto .divTextoIntroduccion p {
     padding-top: px;
   }
 }
@@ -167,10 +167,44 @@
   padding-bottom: 20px;
 }
 
+.divCartasContacto {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+.bodyCardContacto {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+
 .contactoCartas {
   font-size: 0.9rem;
   font-family: "Work Sans", sans-serif;
   margin: 0px;
+}
+
+.bodyCardContacto a p {
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+
+.fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before {
+  color: #4A235A;
+  padding-right: 5px;
 }
 
 .row {
@@ -194,6 +228,7 @@
 .contactoTexto {
   font-family: "Work Sans", sans-serif;
   font-size: 0.95rem;
+  margin: 0px;
 }
 
 .contactoTelefonoEmail {
@@ -253,8 +288,8 @@
 }
 
 .letraServicioAcordeon {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 15px;
+  font-size: 0.9rem;
+  font-family: "Work Sans", sans-serif;
 }
 
 /*caja*/
