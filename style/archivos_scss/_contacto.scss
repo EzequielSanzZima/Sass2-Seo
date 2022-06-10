@@ -35,6 +35,9 @@ a {
         outline-offset: -2px;
       }
 }
+.comoLlego{
+  font-size: map-get($textoParrafo, size);
+}
 
 
 .fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before{ 
